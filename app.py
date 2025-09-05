@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[2]:
 
 
 import pandas as pd
@@ -64,6 +64,7 @@ world_cup_summary = world_cup_summary[['Year', 'Winner', 'Top_Scorer', 'Goals_Sc
 
 # Crear la aplicación Dash
 app = Dash(__name__)
+server = app.server
 
 # Layout de la aplicación
 app.layout = html.Div([
